@@ -41,7 +41,7 @@ apt upgrade -y
 
 ```bash
 sudo apt-get -y install git
-git clone https://github.com/ogyhacker/macip.git
+git clone https://github.com/anishalx/macip.git
 ```
 ### File permission
 This will generate the output file for `macip.sh`.
