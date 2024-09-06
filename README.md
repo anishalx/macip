@@ -98,11 +98,12 @@ use 1
 - Enter the network interface (e.g., wlan0, eth0).
 - Enter the new MAC address.
 
-<b>use 1</b>  
-    <a target="_blank" href="https://www.imghost.net/MdXRE6ZCFGxq3Is"  ><img  src="https://www.imghost.net/ib/jf499Nmo0f9fpnb_1725617305.png" width="50%" height="30%" alt="Screenshot from 2024-09-06 15-25-21.png"/></a> 
 
-<b>#result</b>  
-        <p align="center"><img src="https://www.imghost.net/CoWYsYOwpQlgffH" width="50%" height="30%"/></p> 
+<b>use 1</b>
+  <p align="center"><img src="https://www.imghost.net/ib/S7mWLqulJiR1q0z_1725631654.png" width="50%" height="20%"/></p> 
+  
+<b>Result</b>  
+        <p align="center"><img src="https://www.imghost.net/ib/1TIAwKaPxylPtXs_1725631742.png" width="50%" height="20%"/></p> 
 
 **Automatically Change IP Address:**
 ```bash
