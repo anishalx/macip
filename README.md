@@ -1,9 +1,33 @@
-# macip
+# **MacIP: MAC and IP Address Management Tool**
 
-<h1>This tool is only work for the wlan0 interface </h1>
-<h3>This will help you to change your macadress and the ip adress of your system .</h3> 
-<h3>You can select your custom macadress(extra 5 layers) and ip adress</h3>
+## **Overview**
 
+MacIP is a powerful command-line tool designed to manage and automate MAC and IP address changes on Linux-based systems. This tool is useful for network administrators, penetration testers, and cybersecurity professionals who require dynamic control over network interfaces for privacy, testing, and network management purposes.
+
+MacIP offers six essential tools to manage your network interface, allowing you to change MAC and IP addresses manually or automatically. The tool is built with ease of use in mind and is compatible with most Linux distributions.
+
+---
+
+## **Features**
+
+- **MAC Address Management**: Change or automate MAC address assignments on your network interfaces.
+- **IP Address Management**: Modify or automate IP address assignments for greater control and privacy.
+- **Combined MAC and IP Management**: Use a combination of MAC and IP address management for more complex use cases.
+- **Automation**: Automate the process of changing MAC and IP addresses for network testing or enhanced privacy.
+- **Simple Command Interface**: Easy-to-use command-line interface with clear options and commands.
+
+---
+
+## **Tools Available**
+
+1. **MAC Address Change**: Manually change the MAC address on a specified network interface.
+2. **Auto MAC Address Change**: Automatically change the MAC address without user input.
+3. **IP Address Change**: Manually change the IP address of a specified network interface.
+4. **Auto IP Address Change**: Automatically change the IP address without user input.
+5. **MAC and IP Address Change**: Change both MAC and IP addresses simultaneously.
+6. **Auto MAC and IP Address Change**: Automate the process of changing both MAC and IP addresses.
+
+---
 ## Software Requirements:
 The following OSs are officially supported:
 
@@ -21,123 +45,96 @@ The following OSs are likely able to run macip:
 
 ## Setup
 
-### update your system
+### update and upgrade your system
 
 ```bash
-apt update
+apt update && apt upgrade -y
 ```
+---
 
-### upgrade your system
+## **Installation**
 
+### **Prerequisites**
+- **Python 3.x** installed on your system.
+- Required packages specified in the `requirements.txt` file.
+
+### **Clone the Repository**
 ```bash
-apt upgrade -y
-```
-
-### Git's Quick Install
-
-**NOTE**:
-- Installation must be done with superuser privileges. If you are not using the root account (as default with Kali Linux), prepend commands with `sudo` or change to the root user before beginning.
-- Your package manager may be different to `apt`. You will also need an X server running, either on the system itself, or on your local system.
-
-```bash
-sudo apt-get -y install git
 git clone https://github.com/anishalx/macip.git
+cd macip
 ```
-### File permission
-This will generate the output file for `macip.sh`.
-To make that file executable .
-
+### **Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+### **Make the Script Executable**
 ```bash
 chmod +x macip.sh
 ```
-### launch the tool
-You can launch the tool by using the file.
 
+### **Run MacIP**
 ```bash
 ./macip.sh
 ```
-## Example Usage
+### **Usage**
+After running the tool, you will see a simple menu listing the available tools and commands. You can interact with the tool using the following commands:
 
-macip's Main Menu:
+### **Commands**
+### **Commands**
 
+- `exit`: Exit MacIP completely.
+- `info`: Display information about a specific tool.
+- `list`: List all available tools.
+- `options`: Show the current MacIP configuration.
+- `update`: Update MacIP to the latest version.
+- `use #`: Use a specific tool by its number (e.g., `use 1` to manually change the MAC address).
 
-```bash
-$ ./macip.sh
-===============================================================================
-                            macip | [Version]: 1.0.0
-===============================================================================
-                             [Twitter]: @ogyhacker
-===============================================================================
+### **Example Usage**
 
-
-
-wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-        inet 00.00.00.0 netmask 255.255.252.0  broadcast 100.0.0.0
-        inet6 fg80::dgh6:9jhe:3680:f582e  prefixlen 64  scopeid 0x20<link>
-        ether 15:25:15:d9:87:c5  txqueuelen 1000  (Ethernet)
-        RX packets 2188298  bytes 2588045471 (2.4 GiB)
-        RX errors 0  dropped 4231  overruns 0  frame 0
-        TX packets 333498  bytes 49251682 (46.9 MiB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-
-enter your mac address here
-00:00:00:00:00:00
-52:58:69:58:54:45
-
-```
-
-
-
-## SUCCESSFUL MACADDRESS CHANGED
+**Manually Change MAC Address:**
 
 ```bash
-Current MAC:   52:58:69:58:54:45 (unknown)
-Permanent MAC: 50:28:4a:66:4a:22 (unknown)
-New MAC:       50:58:69:f7:8d:76 (unknown)
-Current MAC:   50:58:69:f7:8d:76 (unknown)
-Permanent MAC: 50:28:4a:66:4a:22 (unknown)
-New MAC:       50:58:69:b8:10:05 (unknown)
-Current MAC:   50:58:69:b8:10:05 (unknown)
-Permanent MAC: 50:28:4a:66:4a:22 (unknown)
-New MAC:       50:58:69:77:a6:67 (unknown)
-Current MAC:   50:58:69:77:a6:67 (unknown)
-Permanent MAC: 50:28:4a:66:4a:22 (unknown)
-New MAC:       50:58:69:35:9e:58 (unknown)
-Current MAC:   50:58:69:35:9e:58 (unknown)
-Permanent MAC: 50:28:4a:66:4a:22 (unknown)
-New MAC:       50:58:69:d0:e9:27 (unknown)
-
-
-wlan0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
-        inet 00.00.0.0  netmask 255.255.252.0  broadcast 10.30.3.255
-        inet6 fg80::dgh6:9jhe:3680:f582e  prefixlen 64  scopeid 0x20<link>
-        ether 15:25:15:d9:87:c5  txqueuelen 1000  (Ethernet)
-        RX packets 2188298  bytes 2588045471 (2.4 GiB)
-        RX errors 0  dropped 4231  overruns 0  frame 0
-        TX packets 333498  bytes 49251682 (46.9 MiB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-
-macaddress has been changed successfully
-
+use 1
 ```
+- Enter the network interface (e.g., wlan0, eth0).
+- Enter the new MAC address.
 
-## IP ADDRESS CHANGE
-
+**Automatically Change IP Address:**
 ```bash
-enter your ip here 
-000.00.0.0
-198.25.36.22
-
-wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-        inet 198.25.36.22  netmask 255.255.255.0  broadcast 10.30.3.255
-        inet6 fg80::dgh6:9jhe:3680:f582e  prefixlen 64  scopeid 0x20<link>
-        ether 15:25:15:d9:87:c5  txqueuelen 1000  (Ethernet)
-        RX packets 2194740  bytes 2596372978 (2.4 GiB)
-        RX errors 0  dropped 4244  overruns 0  frame 0
-        TX packets 334499  bytes 49408641 (47.1 MiB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-
-macaddress and the Ip address has been changed successfully
-
+use 4
 ```
+- Enter the network interface.
+
+### **Updating MacIP**
+You can update MacIP directly from the command-line using the `update` command:
+```bash
+update
+```
+This command will pull the latest version of MacIP from the GitHub repository and update the local files.
+
+
+### **Contribution Guidelines**
+We welcome contributions from the community! If you would like to contribute, follow these steps:
+1. **Fork the repository.**
+2. **Create a new branch for your feature or bug fix.**
+3. **Commit your changes and push them to your fork.**
+4. **Create a pull request, and we will review your submission.**
+
+
+### **License**
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE). See the LICENSE file for more details.
+
+
+
+### **Acknowledgments**
+- Special thanks to all the contributors who helped build and improve this tool.
+- The project is designed to support ethical usage in cybersecurity and networking tasks.
+
+### **Contact**
+For any questions, issues, or feature requests, feel free to open an issue on GitHub or contact me at - **<a href="mailto:anishalx7@gmail.com" class="btn">Email Me</a>**
+
+
 
