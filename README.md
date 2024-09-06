@@ -80,7 +80,6 @@ chmod +x macip.sh
 After running the tool, you will see a simple menu listing the available tools and commands. You can interact with the tool using the following commands:
 
 ### **Commands**
-### **Commands**
 
 - `exit`: Exit MacIP completely.
 - `info`: Display information about a specific tool.
@@ -98,6 +97,9 @@ use 1
 ```
 - Enter the network interface (e.g., wlan0, eth0).
 - Enter the new MAC address.
+  
+    <p align="center"><img src="https://www.imghost.net/f4nJ5BpVczyrDjr" width="50%" height="30%"/></p> 
+    <p align="center"><img src="https://www.imghost.net/CoWYsYOwpQlgffH" width="50%" height="30%"/></p> 
 
 **Automatically Change IP Address:**
 ```bash
