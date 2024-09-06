@@ -111,6 +111,9 @@ use 4
 ```
 - Enter the network interface.
 
+<b>use 4</b>
+  <p align="center"><img src="https://www.imghost.net/ib/ZNBxDrMGhnXPnpJ_1725632329.png" width="50%" height="20%"/></p> 
+  
 ### **Updating MacIP**
 You can update MacIP directly from the command-line using the `update` command:
 ```bash
